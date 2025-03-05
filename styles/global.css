@@ -62,6 +62,6 @@ img {
   }
 
   .desktop-only {
-    display: initial;
+    display: inline-block;
   }
 }
