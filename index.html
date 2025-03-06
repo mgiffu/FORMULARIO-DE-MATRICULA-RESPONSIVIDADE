@@ -12,8 +12,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div id="app">
-    <main class="container">
+  <div id="app" class="container">
+    <main>
       <div class="main-container">
         <div class="back">
           <img src="assets/icons/arrow-left-02.svg" alt="">
@@ -25,9 +25,48 @@
           Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.
         </p>
       </div>
+
+      <form action="" method="post" enctype="multipart/form-data">
+        <fieldset class="child-information">
+          <legend>Informações da criança</legend>
+
+          <div class="input-wrapper">
+            <label for="fullname">Nome Completo</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Qual o nome da criança?">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="birth">Data de nascimento</label>
+            <input type="date" id="birth" name="birth">
+          </div>
+
+          <div class="select-wrapper">
+            <label for="gender">Sexo</label>
+              <select name="gender" id="gender">
+                <option value="male">Masculino</option>
+                <option value="female">Feminino</option>
+              </select>
+          </div>
+
+          <div class="textarea-wrapper">
+            <label for="medical-info">Informações médicas</label>
+            <textarea name="medical-info" id="medical-info" placeholder="A criança possui alguma infomração médica que a escola precisa estar ciente? Se sim, especifique."></textarea>
+          </div>
+
+          <div class="dorparea-wrapper">
+            <label for="birth-file">Certidão de Nascimento</label>
+            <input type="file" id="birth-file" name="birth-file">
+            <img src="assets/icons/cloud-upload.svg" alt="">
+            <p>
+              Clique aquip para <br>
+              selecionar os arquivos
+            </p>
+          </div>
+        </fieldset>
+      </form>
     </main>
 
-    <aside class="container">
+    <aside>
       <div class="aside-container">
         <header>
           <img src="assets/icons/logo.svg" alt="Logo Estrelas do Amanhã">
