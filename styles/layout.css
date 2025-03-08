@@ -48,7 +48,7 @@ aside{
   main {
     overflow: auto;
     padding: 4rem;
-    max-width: 33rem;
+    /* max-width: 33.625rem; */
     margin-left: auto;
 
     & .back {

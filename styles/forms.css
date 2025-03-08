@@ -19,6 +19,12 @@ fieldset + fieldset {
   margin-top: 3rem;
 }
 
+.action-wrapper {
+  margin-top: 3rem;
+  display: grid;
+  gap: 1rem;
+}
+
 @media (width >= 80em) {
   fieldset {
     gap: 1.5rem;
@@ -26,5 +32,10 @@ fieldset + fieldset {
 
   legend {
     margin-bottom: 1.5rem;
+  }
+
+  .action-wrapper {
+    display: flex;
+    gap: 1rem;
   }
 }

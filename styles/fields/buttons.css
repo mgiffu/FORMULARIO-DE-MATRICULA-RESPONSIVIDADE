@@ -1,0 +1,41 @@
+button {
+  all: unset;
+  font-weight: 500;
+  color: var(--text-highlight);
+  border-radius: .5rem;
+  padding-block: .75rem;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #E43A12;
+  color: white;
+
+  &:hover,
+  &:focus {
+    background-color: #F3541C;
+  }
+}
+
+.btn-secondary {
+  border: 1px solid var(--text-highlight);
+
+  &:hover,
+  &:focus {
+    outline: .25rem solid var(--surface-secondary);
+  }
+}
+
+@media (width >= 80em) {
+  & button {
+    width: initial;
+    align-items: initial;
+    padding: .75rem 1.5rem;
+  }
+
+  & .btn-secondary {
+    margin-left: auto;
+  }
+}
