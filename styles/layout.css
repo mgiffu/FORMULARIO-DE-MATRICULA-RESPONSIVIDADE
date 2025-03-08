@@ -48,13 +48,8 @@ aside{
   main {
     overflow: auto;
     padding: 4rem;
-    
-  
-    & .main-container {
-      max-width: 33rem;
-      margin-left: auto;
-      /* border: 1px solid black */
-    }
+    max-width: 33rem;
+    margin-left: auto;
 
     & .back {
       gap: 1.5rem;
